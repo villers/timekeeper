@@ -17,7 +17,9 @@ func getUrl(title string) string {
 
 	switch title {
 	case "Google Chrome", "Google Chrome Canary", "Brave Browser":
-		url, err = mack.Tell(title, " URL of active tab of front window")
+		{
+			url, err = mack.Tell(title, " URL of active tab of front window")
+		}
 
 	case "webkit", "Safari":
 		{
